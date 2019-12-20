@@ -11,11 +11,11 @@
 
 Udacity Front-End Developer Nanodegree JS object oriented project
 
-* Try It Out https://YR3.github.io/classical-memory-game/ 
+* Try It Out https://yr3.github.io/classic-arcade-game/ 
 
 * Game overview 
 
-<img src="img/memover.gif" alt="game-overview">
+<img src="images/Classic Overview.gif" alt="game-overview">
 
 ## How The Game Works
 
