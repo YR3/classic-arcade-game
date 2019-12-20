@@ -1,20 +1,31 @@
-# Classic Arcade Game Clone Project
+# Classic Arcade game V0.5 (Prototype)
+
 
 ## Table of Contents
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+* [General](#general)
+* [How The Game Works](#how-the-game-works)
+* [Resources](#resources)
 
-## Instructions
+## General 
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+Udacity Front-End Developer Nanodegree JS object oriented project
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+* Try It Out https://YR3.github.io/classical-memory-game/ 
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+* Game overview 
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+<img src="img/memover.gif" alt="game-overview">
 
-## Contributing
+## How The Game Works
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+The objective of the game is to guide the character to the water at the top of the screen. The only player control is the 4 direction keyboard arrows used to navigate the character; each push in a direction causes the character to advance once in that direction.
+
+The player starts at the bottom of the screen, which contains a horizontal road occupied by bugs speeding along it. The player must guide the character between opposing lanes of traffic to avoid becoming roadkill, which results in starting over at the bottom. The player must avoid the bug.
+
+The game ends once you reach the water.
+
+## Resources
+
+* Icons from Font [fontawesome](https://fontawesome.com/v4.7.0/icons/) - [cdn](https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css).
+* Images from [pixaby](https://pixabay.com/).
