@@ -132,7 +132,7 @@ Enemy.prototype.update = function(dt) {
         player.x + 3 > this.x &&
         player.y < this.y + 25 &&
         30 + player.y > this.y) {
-            alert('You lost! You collided with an enemy.');
+            alert('You lost! You became roadkill.');
             player.x = 200;
             player.y = 480;
         }
