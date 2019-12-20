@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <title>JavaScript Classic Game</title>
+    <meta name="description" content='Enjoy this JavaScript classic game designed by Udacity and made by Yazeed Al`Fadani (Inspired by the worldwide classic "Frogger"'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+        <header>
+                <h1>JavaScript Classic Game</h1>
+        </header>
+    
+        <div id="welcome-popup" class="welcome">
+                <div id="welcome-message-content" class="welcome-style">
+                    <div class="welcome-content playerImages">
+                        <span class="close-button close" id="close-x">&times;</span>
+                        <h3>Welcome!</h3>
+                        <p id="welcome-message"></p>
+                        <p>Select the character you'd like to use in the game:</p>
+                        <img src="images/char-boy.png" class="playerImage clicked">
+                        <img src="images/char-cat-girl.png" class="playerImage">
+                        <img src="images/char-horn-girl.png" class="playerImage">
+                        <img src="images/char-pink-girl.png" class="playerImage">
+                    </div>
+                    <button class="button-start close" id="start">Start</button>
+                </div>
+            </div>
+    <div class="hide modal-overlay">
+        <div class="modal">
+            <span class="close-button">×</span>
+            <img src='images/award.png' height="150px" id="award">
+            <p>You`ve reached the water without hitting a bug!</p>
+        </div>
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+    <footer>
+            <p>Made with <i class="fa fa-heart"></i> by:
+                <a href="https://yazeed.works"> Yazeed Al`Fadani</a>.</p>
+    </footer>
 </body>
 </html>
