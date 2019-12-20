@@ -1,4 +1,4 @@
-# Classic Arcade game V0.5 (Prototype)
+# Classic Arcade Game V0.5 (Prototype)
 
 
 ## Table of Contents
