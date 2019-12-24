@@ -1,232 +1,227 @@
+
+
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    text-align: center;
-    max-width: 100%;
-    line-height: 1.6;
-    font-size: 18px;
-    color: #444;
-    background: #ffffff url('../images/geometry2.png');
-    /* Background pattern from Subtle Patterns */
-    font-family: 'Coda', cursive;
+	text-align: center;
+	max-width: 100%;
+	line-height: 1.6;
+	font-size: 18px;
+	color: #444;
+	background: #ffffff url('../images/geometry2.png');
+	/* Background pattern from Subtle Patterns */
+	font-family: 'Coda', cursive;
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #f9fafb;
-    margin: 0% 20% 0% 23%;
-    position: absolute;
-    right: 17%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #f9fafb;
+	margin: 0% 20% 0% 23%;
+	position: absolute;
+	right: 17%;
 }
 
 * {
-    transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
 .playerImages img:hover,
 .clicked {
-    padding: 0.625rem;
-    box-shadow: 0 2px 22px -5px rgba(0,0,0,.75);
+	padding: 0.625rem;
+	box-shadow: 0 2px 22px -5px rgba(0, 0, 0, .75);
 }
 
 .hide {
-    display: none;
+	display: none;
 }
+
 #welcome-popup.welcome {
-    display: none;
+	display: none;
 }
 
 .welcome {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .welcome-content {
-    background: #ffffff url('../img/geometry2.png');
-    /* Background pattern from Subtle Patterns */
-    padding: 1% 5% 5% 5%;
+	background: #ffffff url('../img/geometry2.png');
+	/* Background pattern from Subtle Patterns */
+	padding: 1% 5% 5% 5%;
 }
 
 .welcome-style {
-    background: linear-gradient(160deg, #aa7ecd 0%, #02ccba 100%);
-    padding: 3% 3% 3% 3%;
-    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-    border-radius: 10px;
-
+	background: linear-gradient(160deg, #aa7ecd 0%, #02ccba 100%);
+	padding: 3% 3% 3% 3%;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+	border-radius: 10px;
 }
 
 .welcome-content p {
-    margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 .button-start {
-    position: relative;
-    top: -35px;
-    background: #232d35;
-    border-radius: 8px;
-    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Coda', cursive;
+	position: relative;
+	top: -35px;
+	background: #232d35;
+	border-radius: 8px;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Coda', cursive;
 }
 
 .close-button {
-    float: right;
-    font-size: 35px;
-    color: grey;
-    padding-top: 3%;
+	float: right;
+	font-size: 35px;
+	color: grey;
+	padding-top: 3%;
 }
 
 .button-start:hover,
 .button-start:focus,
 .close-button:hover,
 .close-button:focus {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 9999
-  }
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999
+}
 
-  
-  .modal {
-    padding: 20px 30px;
-    width: 50%;
-    max-height: calc(100% - 150px);
-    overflow-y: hidden;
-    position: relative;
-    min-height: 300px;
-    margin: 5% auto 0;
-    background: #fff;
-    z-index: 9999;
-  }
+.modal {
+	padding: 20px 30px;
+	width: 50%;
+	max-height: calc(100% - 150px);
+	overflow-y: hidden;
+	position: relative;
+	min-height: 300px;
+	margin: 5% auto 0;
+	background: #fff;
+	z-index: 9999;
+}
 
-  canvas {
-    background: linear-gradient(160deg, #aa7ecd 0%, #02ccba 100%);
-    padding: 3% 3% 3% 3%;
-    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-    padding-top: 0;
-    padding-bottom: 0;
-    border-radius: 10px;
-  }
+canvas {
+	background: linear-gradient(160deg, #aa7ecd 0%, #02ccba 100%);
+	padding: 3% 3% 3% 3%;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+	padding-top: 0;
+	padding-bottom: 0;
+	border-radius: 10px;
+}
 
 
-  /*
+/*
 * Media Queries
 */
 
 @media screen and (max-width: 650px) {
-    header {
-        width: 90%;
-        margin: 0 auto;
-        flex-basis: 40%;
-    }
-
-    canvas {
-        width: 95%;
-        padding: 3%;
-        margin: 0 auto;
-        min-height: 100%;
-    }
-
-    canvas {
-        height: auto;
-        width: 550px;
-        margin-top: 2%;
-    }
-
-    .modal {
-        width: 50%;
-        left: 20%;
-        top: 25%;
-        margin: auto 0;
-    }
-
-    #award {
-        left: 10px;
-        position: relative;
-    }
+	header {
+		width: 90%;
+		margin: 0 auto;
+		flex-basis: 40%;
+	}
+	canvas {
+		width: 95%;
+		padding: 3%;
+		margin: 0 auto;
+		min-height: 100%;
+	}
+	canvas {
+		height: auto;
+		width: 550px;
+		margin-top: 2%;
+	}
+	.modal {
+		width: 50%;
+		left: 20%;
+		top: 25%;
+		margin: auto 0;
+	}
+	#award {
+		left: 10px;
+		position: relative;
+	}
 }
 
 @media screen and (max-width: 368px) {
-    canvas {
-        width: 300px;
-        height: 92px;
-        margin-top: 2%;
-    }
-
-    h1 {
-        right: -26%;
-        font-size: 27px;
-        width: 400px;
-        top: 3%;
-    }
+	canvas {
+		width: 300px;
+		height: 92px;
+		margin-top: 2%;
+	}
+	h1 {
+		right: -26%;
+		font-size: 27px;
+		width: 400px;
+		top: 3%;
+	}
 }
 
 @media screen and (min-width: 369px) and (max-width: 460px) {
-    canvas {
-        width: 370px;
-    }
-    
-    h1 {
-        width: 500px;
-        left: -40%;
-        font-size: 31px;
-        top: 2%;
-    }
+	canvas {
+		width: 370px;
+	}
+	h1 {
+		width: 500px;
+		left: -40%;
+		font-size: 31px;
+		top: 2%;
+	}
 }
 
 @media screen and (min-width: 461px) and (max-width: 516px) {
-    canvas {
-        width: 440px;
-    }
+	canvas {
+		width: 440px;
+	}
 }
 
 @media screen and (min-width: 517px) and (max-width: 580px) {
-    canvas {
-        width: 500px;
-    }
+	canvas {
+		width: 500px;
+	}
 }
 
 @media screen and (min-width: 651px) and (max-width: 820px) {
-    .modal {
-        width: 80%;
-        left: 5%;
-        top: 35%;
-        margin: auto 0;
-    }
-    h1 {
-        right: -2%;
-        width: 500px;
-    }
-    
+	.modal {
+		width: 80%;
+		left: 5%;
+		top: 35%;
+		margin: auto 0;
+	}
+	h1 {
+		right: -2%;
+		width: 500px;
+	}
 }
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-    .modal {
-        width: 50%;
-        top: 32%;
-    }
+	.modal {
+		width: 50%;
+		top: 32%;
+	}
 }
+
